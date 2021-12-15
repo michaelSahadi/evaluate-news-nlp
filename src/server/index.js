@@ -1,9 +1,17 @@
 var path = require('path')
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 
 const app = express()
 
+// You could call it aylienapi, or anything else
+const apiKey = process.env.API_KEY 
+
+console.log(`Your API key is ${process.env.API_KEY}`);
 app.use(express.static('dist'))
 
 console.log(__dirname)
