@@ -24,7 +24,7 @@ function handleSubmit(event) {
   const formText = document.getElementById('text').value;
 
   if (formText==='') {
-    alert('Please enter the URL')
+    alert('Please enter URL')
   }
   else if (checkForURL(formText)) {
     fetch('/test', {

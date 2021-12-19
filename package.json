@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --host 0.0.0.0 --open",
@@ -20,7 +20,7 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
@@ -35,13 +35,13 @@
     "jest": "^26.6.3",
     "mini-css-extract-plugin": "^1.6.2",
     "node-fetch": "^2.6.1",
-    "node-sass": "^5.0.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.8",
+    "node-sass": "^7.0.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
-    "webpack-dev-server": "^3.11.2",
+    "webpack-dev-server": "^4.6.0",
     "workbox-webpack-plugin": "^6.1.5"
   }
 }
