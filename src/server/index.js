@@ -14,26 +14,10 @@ app.use(cors())
 
 app.use(express.json())
 
-// const apiKey = process.env.API_KEY 
-
-// console.log(`Your API key is ${process.env.API_KEY}`);
-// app.use(express.static('dist'))
-
-// console.log(__dirname)
-
-// app.get('/', function (req, res) {
-//     res.sendFile('dist/index.html')
-//     // res.sendFile(path.resolve('src/client/views/index.html'))
-// })
-
-// // designates what port the app will listen to for incoming requests
+// designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
-
-// app.get('/test', function (req, res) {
-//     res.send(mockAPIResponse)
-// })
 
 app.use(express.static(path.resolve(__dirname, '../../dist')))
 
@@ -42,11 +26,6 @@ console.log('dirname', __dirname)
 app.get('/', function (req, res) {
     res.sendFile(path.resolve(__dirname, '../../dist/index.html'))
 })
-
-
-// app.listen(port, function () {
-//     console.log(`App listening on port ${port}`)
-// })
 
 app.post('/test', async(req, res) => {
 

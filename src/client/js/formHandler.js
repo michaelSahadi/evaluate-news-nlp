@@ -20,7 +20,7 @@ import { checkForURL } from "./textChecker"
 function handleSubmit(event) {
   event.preventDefault()
 
-  // check what text was put into the form field
+  // check form field entry
   const formText = document.getElementById('text').value;
 
   if (formText==='') {
@@ -37,7 +37,7 @@ function handleSubmit(event) {
     .then(res => res.json())
     .then(result => {
       console.log('Result:', result);
-
+      // Update UI
       document.getElementById('score').innerHTML = result.score_tag
       document.getElementById('agreement').innerHTML = result.agreement
       document.getElementById('subjectivity').innerHTML = result.subjectivity
