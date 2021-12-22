@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
     res.sendFile(path.resolve(__dirname, '../../dist/index.html'))
 })
 
+//POST 
 app.post('/test', async(req, res) => {
 
     console.log(process.env.API_KEY);

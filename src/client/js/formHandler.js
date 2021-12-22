@@ -27,7 +27,7 @@ function handleSubmit(event) {
     alert('Please enter URL')
   }
   else if (checkForURL(formText)) {
-    fetch('/test', {
+    fetch('http://localhost:8081/test', {
       method: 'POST',
       body: JSON.stringify({ formText }),
       headers: {
